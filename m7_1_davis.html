@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MigraTracker App/Website for WNM 617</title>
+    <link rel="stylesheet" href="m7_1.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="themes/midterm_m7_trackerApp.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" /> 
+    <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script> 
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>  
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtz71eA5XCEcxLE2X2nXeVJ33Omop5X8Y&callback=mapIt"></script>
+    <!--<script src="jquery-ui-map/ui/jquery.ui.map.js"></script>-->
+    <script src="midterm_m7_1_map.js"></script>
+</head>
+
+<body>
+
+<!-- ======================================= Page one ================================================== -->
+<div data-role="page" id="one" data-theme="a">
+
+    <div data-role="header" data-theme="a">
+        <h1>Mandrills</h1>
+    </div> <!--header-->
+
+    <div data-role="content" data-theme="a" style="padding-left:40px">
+        <div class="ui-grid-a" >
+            <div class="ui-block-a">
+                <a href="#six" data-rel="dialog" data-transition="pop" data-theme="a"><img src="images/Jasper.jpg" alt="jasper SD zoo" ><h3>Jasper</h3></a>
+            </div>
+            <div class="ui-block-b" >
+               <a href="#seven" data-rel="dialog" data-transition="pop" data-theme="a"><img src="images/JJ2.jpg" alt="j.j. SD Zoo"><h3>J.J.</h3></a>
+            </div>
+            <div class="ui-block-a">
+                <a href="#eight" data-rel="dialog" data-transition="pop" data-theme="a"><img src="images/kesi.jpg" alt="Kesi SD Zoo"><h3>Kesi</h3></a>
+            </div>
+            <div class="ui-block-b">
+                <a href="#nine" data-rel="dialog" data-transition="pop" data-theme="a"><img src="images/ajani.jpg" alt="Ajani SD Zoo"><h3>Ajani</h3></a>
+            </div>
+        </div><!--grid a-->
+    
+    </div><!--main-->
+
+
+    <div data-role="footer" style="overflow:hidden;" class="nav-custom-example" data-theme="a">
+        <div data-role="navbar" class="nav-custom-example" data-grid="d">
+            <ul>
+                <li><a href="#one" id="home1" data-icon="custom" class="ui-btn-active" data-theme="a"></a></li>
+                <li><a href="#two" id="feed1" data-icon="custom" class="ui-btn-active" data-rel="dialog" data-transition="pop" data-theme="a"></a></li>
+                <li><a href="#three" id="map1" data-icon="custom" class="ui-btn-active" data-theme="a"></a></li>
+                <li><a href="#four" id="share1" data-icon="custom" class="ui-btn-active" data-rel="dialog" data-transition="pop" data-theme="a"></a></li>
+                <li><a href="#five" id="settings1" data-icon="custom" class="ui-btn-active" data-theme="a" ></a></li>
+            </ul>
+        </div><!--navbar-->
+    </div><!--footer-->
+</div><!--page one-->
+
+<!-- ======================================= Page two ================================================== -->
+<div data-role="page" id="two" data-theme="b">
+    <div data-role="header" data-theme="b">
+        <h1>Feed</h1>
+            </div> <!--header-->
+        <div data-role="content" data-theme="b">
+            <h2>Jasper, Adult Male Mandrill</h2>
+            <p>Feeding near Reserve Du Dja</p>
+            <p style="font-size:12px">10/16/2017 at 9:15 A.M. PDT</p>
+            <h2>New Photo</h2>
+            <img src="images/jasperaway.jpg" alt="jasper SD Zoo">
+            <br>
+            <h2>J.J., Adolescent Male Mandrill</h2>
+            <p>Playing near Reserve Du Dja</p>
+            <p style="font-size:12px">10/15/2017 at 13:35 P.M. PDT</p>
+            <h2>New Photo</h2>
+            <img src="images/jjwalk.jpg" alt="JJ SD Zoo">
+            <br>
+            <h2>Ajani, Adolescent Male Mandrill</h2>
+            <p>Chasing his mother near Reserve Du Dja</p>
+            <p style="font-size:12px">10/14/2017 at 16:05 P.M. PDT</p>
+            <br>
+            <h2>Kesi, Female Mandrill</h2>
+            <p>Feeding baby near Reserve Du Dja</p>
+            <p style="font-size:12px">10/14/2017 at 15:35 P.M. PDT</p>
+
+        </div><!--page two content-->
+        
+          <div data-role="footer" style="overflow:hidden;" class="nav-custom-example" data-theme="b">
+        <div data-role="navbar" class="nav-custom-example" data-grid="d">
+            <ul>
+                <li><a href="#one" id="home1" data-icon="custom" class="ui-btn-active" data-theme="a"></a></li>
+                <li><a href="#two" id="feed1" data-icon="custom" class="ui-btn-active" data-rel="dialog" data-transition="pop" data-theme="a"></a></li>
+                <li><a href="#three" id="map1" data-icon="custom" class="ui-btn-active" data-theme="a"></a></li>
+                <li><a href="#four" id="share1" data-icon="custom" class="ui-btn-active" data-rel="dialog" data-transition="pop" data-theme="a"></a></li>
+                <li><a href="#five" id="settings1" data-icon="custom" class="ui-btn-active" data-theme="a"></a></li>
+            </ul>
+        </div><!--navbar-->
+    </div><!--footer-->
+</div><!--page two-->
+
+<!-- ======================================= Page three ================================================== -->
+<div data-role="page" id="three" data-theme="a">
+    <div data-role="header" data-theme="a">
+        <h1>Map</h1>
+    </div> <!--header-->
+
+    <div data-role="content" data-theme="a">
+        <h3 style="text-align:center">Please add sightings by clicking on the map below.</h3>
+        <div>
+            <div id="map"></div>
+        </div>
+            <h6>Please refresh the map if it is not displaying.</h6>
+    </div><!--page three content-->
+      <div data-role="footer" style="overflow:hidden;" class="nav-custom-example" data-theme="a">
+        <div data-role="navbar" class="nav-custom-example" data-grid="d">
+            <ul>
+                <li><a href="#one" id="home1" data-icon="custom" class="ui-btn-active" data-theme="a"></a></li>
+                <li><a href="#two" id="feed1" data-icon="custom" class="ui-btn-active" data-rel="dialog" data-transition="pop" data-theme="a"></a></li>
+                <li><a href="#three" id="map1" data-icon="custom" class="ui-btn-active" data-theme="a"></a></li>
+                <li><a href="#four" id="share1" data-icon="custom" class="ui-btn-active" data-rel="dialog" data-transition="pop" data-theme="a"></a></li>
+                <li><a href="#five" id="settings1" data-icon="custom" class="ui-btn-active" data-theme="a"></a></li>
+            </ul>
+        </div><!--navbar-->    
+    </div><!--footer-->
+</div><!--page three-->
+
+<!-- ======================================= Page four ================================================== -->
+<div data-role="page" id="four" data-theme="a">
+    <div data-role="header" data-theme="a">
+        <h1>Sightings</h1>
+    </div> <!--header-->
+
+    <div data-role="content" data-theme="a">
+        <h2>Please post your sightings here.</h2>
+            <form>
+
+               <label for="date1">Date</label> 
+               <input type="text" id="date1" name="date1">
+          
+
+               <label for="time1">Time</label> 
+               <input type="text" id="time1" name="time1" value="">
+
+               <label for="mandrill">Mandrill</label> 
+               <select name="select-choice-1" id="select-choice-1">
+                    <option value="jasper">Jasper</option>
+                    <option value="jj">J.J.</option>
+                    <option value="kesi">Kesi</option>
+                    <option value="ajani">Ajani</option>
+                </select>
+
+               <label for="lat">Latitude</label> 
+               <input type="text" id="lat" name="lat">
+
+               <label for="lng">Longitude</label>
+               <input type="text" id="lng" name="lng">
+        
+                <input class="submit" type="submit" value="Submit">
+    </form> 
+        
+
+    </div><!--page four content-->
+
+      <div data-role="footer" style="overflow:hidden;" class="nav-custom-example" data-theme="a">
+        <div data-role="navbar" class="nav-custom-example" data-grid="d">
+            <ul>
+                <li><a href="#one" id="home1" data-icon="custom" class="ui-btn-active" data-theme="a"></a></li>
+                <li><a href="#two" id="feed1" data-icon="custom" class="ui-btn-active" data-rel="dialog" data-transition="pop" data-theme="a"></a></li>
+                <li><a href="#three" id="map1" data-icon="custom" class="ui-btn-active" data-theme="a"></a></li>
+                <li><a href="#four" id="share1" data-icon="custom" class="ui-btn-active" data-rel="dialog" data-transition="pop" data-theme="a"></a></li>
+                <li><a href="#five" id="settings1" data-icon="custom" class="ui-btn-active" data-theme="a" ></a></li>
+            </ul>
+        </div><!--navbar-->
+    </div><!--footer-->
+</div><!--page four-->
+
+<!-- ======================================= Page five ================================================== -->
+
+<div data-role="page" id="five" data-theme="a">
+    <div data-role="header" data-theme="a">
+        <h1>Settings</h1>
+    </div> <!--header-->
+
+    <div id="center">
+    <img src="images/TrackerAppLogo.png" alt="logo" style="width:70px;height:80px;padding-top:0;padding-bottom:5px" >
+    </div>
+
+    <div data-role="content" data-theme="a">
+        <input type="button" value="Account" id="account" data-icon="user" data-theme="a"></input>
+            <label for="slider-flip-m">Notifications</label>
+                <select name="slider-flip-m" id="slider-flip-m" data-role="slider" data-mini="true" data-theme="a">
+                    <option value="off">Off</option>
+                    <option value="on" selected="">On</option>
+                </select>
+        <input type="button" value="Follow Us" data-icon="navigation" data-theme="a"></input>
+        <input type="button" value="Information" data-icon="info" data-theme="a"></input>
+        <a href="mailto:davisjs015@gmail.com"><input type="button" value="Email Us" data-icon="mail" data-theme="a"></input></a>
+
+    </div><!--page five content-->
+    <h6>This page is just to show the full experience of the app.</h6>
+
+      <div data-role="footer" style="overflow:hidden;" class="nav-custom-example" data-theme="a">
+        <div data-role="navbar" class="nav-custom-example" data-grid="d">
+            <ul>
+                <li><a href="#one" id="home1" data-icon="custom" class="ui-btn-active" data-theme="a"></a></li>
+                <li><a href="#two" id="feed1" data-icon="custom" class="ui-btn-active" data-rel="dialog" data-transition="pop" data-theme="a"></a></li>
+                <li><a href="#three" id="map1" data-icon="custom" class="ui-btn-active" data-theme="a"></a></li>
+                <li><a href="#four" id="share1" data-icon="custom" class="ui-btn-active" data-rel="dialog" data-transition="pop" data-theme="a"></a></li>
+                <li><a href="#five" id="settings1" data-icon="custom" class="ui-btn-active" data-theme="a"></a></li>
+            </ul>
+        </div><!--navbar-->
+    </div><!--footer-->
+</div><!--page five-->
+
+<!-- ===================================== MANDRILL PAGES ======================================================= -->
+
+<!-- ===================================== page six - Jasper ================================================== -->
+
+<div data-role="page" id="six" data-theme="a">
+    <div data-role="header" data-theme="a">
+        <h1>Jasper</h1>
+    </div> <!--header-->
+        
+    <div data-role="content" data-theme="a">
+        <img src="images/Jasper.jpg" alt="jasper SD Zoo" style="width:305px;height:350px">
+        <h4>Jasper</h4><img src="images/heart.png" alt="heart" style="width:20px;height:20px;float:right">
+        <h5>Age: 19 years old</h5>
+        <h4>General Information</h4>
+        <p>Jasper is the adult male at Reserve Du Dja. He is the partner of Kesi (please see her page). Jasper and Kesi recently had their first baby November 2016. Jasper is the dominant male in the zoo's horde. </p>
+        <p>Since Jasper is the dominant Adult male he takes on characteristics other males do not. The dominant adult male mandrills are very distinct in their appearance. They have a bright red stripe down their nose that is flanged by blue on either side and have a red tip. Most people know a mandrill male because their rump is a beautiful color. As the male matures their rump becomes shades of blue, purple, mauve and red. Dominant male's are also distinguishable because they are "fatter" than subordinate males.</p>
+        </div><!--page six content-->
+
+    <div data-role="footer" data-theme="a">
+        <h6>&copy; 2017 Jessica Davis</h6>
+    </div><!--footer-->
+</div><!--page six-->
+
+<!-- ===================================== page seven - JJ ===================================================== -->
+<div data-role="page" id="seven" data-theme="a">
+    <div data-role="header" data-theme="a">
+        <h1>J.J.</h1>
+    </div> <!--header-->
+        
+    <div data-role="content" data-theme="a">
+        <img src="images/JJ2.jpg" alt="jj SD Zoo" style="width:305px;height:350px">
+        <h4>J.J.</h4><img src="images/heart.png" alt="heart" style="width:20px;height:20px;float:right">
+        <h5>Age: 7 years old</h5>
+        <h4>General Information</h4>
+        <p>J.J. is a adolescent male at Reserve Du Dja. He is the sister of Kesi (please see her page). J.J. and Kesi were transferred to Reserve Du Dja after there father passed on. There sister, Tami and mother are at the Minkebe National Park. J.J. will be the subordinate male in the horde.  </p>
+        <p>Adolescent male mandrills are similar to the femlaes in their appearance. They have a red stripe down their nose that is flanged by blue on either side with a red tip but the red is muted in comparison to the dominant males. The subordinate males also do not have the signature beautiful colored rump that the dominant males have.</p>
+        </div><!--page seven content-->
+
+    <div data-role="footer" data-theme="a">
+        <h6>&copy; 2017 Jessica Davis</h6>
+    </div><!--footer-->
+</div><!--page seven-->
+
+<!-- ===================================== page eight - Kesi ===================================================== -->
+<div data-role="page" id="eight" data-theme="a">
+    <div data-role="header" data-theme="a">
+        <h1>Kesi</h1>
+    </div> <!--header-->
+        
+    <div data-role="content" data-theme="a">
+        <img src="images/keszoom.jpg" alt="Kesi SD Zoo" style="width:305px;height:350px">
+        <h4>Kesi</h4><img src="images/heart.png" alt="heart" style="width:20px;height:20px;float:right">
+        <h5>Age: 14 years old</h5>
+        <h4>General Information</h4>
+        <p>Kesi is the sister of J.J., the partner of Jasper and the mother of Ajani. Kesi along with J.J., her sister Tami and mother were brought to Minkebe National Park when their father passed on.</p>
+        <p>Females have the same characteristics as subordinate males. They have a muted red stripe down their nose and on the tip of the nost flanged by the blue sides. They have a blue and purple colored rump which is clearly not as bright as the dominant males. Females breed every two years and lasts for three months, June to October. With a gestation typically lasting 175 days.</p>
+        </div><!--page eight content-->
+
+    <div data-role="footer" data-theme="a">
+        <h6>&copy; 2017 Jessica Davis</h6>
+    </div><!--footer-->
+</div><!--page eight-->
+
+<!-- ===================================== page nine - Ajani ===================================================== -->
+
+<div data-role="page" id="nine" data-theme="a">
+    <div data-role="header" data-theme="a">
+        <h1>Ajani</h1>
+    </div> <!--header-->
+        
+    <div data-role="content" data-theme="a">
+        <img src="images/ajanizoom.jpg" alt="Ajani SD Zoo" style="width:305px;height:350px">
+        <h4>Ajani</h4><img src="images/heart.png" alt="heart" style="width:20px;height:20px;float:right">
+        <h5>Age: Born November 28, 2016</h5>
+        <h4>General Information</h4>
+        <p>Ajani is the offspring of Jasper and Kesi. Newphew of J.J. He was born at Reserve Du Dja. </p>
+        <p>Mandrills are typical parented by just their mother. There is some alloparenting observed in Mandrill hordes but it occurs with the birthing mother's relatives helping care for the young. Ajani will continue sticking with his mother until he is six years old. This is when Mandrills leave their natal group and live within the others in the horde. </p>
+        </div><!--page nine content-->
+
+    <div data-role="footer" data-theme="a">
+        <h6>&copy; 2017 Jessica Davis</h6>
+    </div><!--footer-->
+</div><!--page nine-->
+
+</body>
+    
+</html>
+
+

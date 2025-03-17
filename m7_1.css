@@ -1,0 +1,82 @@
+#map {
+    height: 550px;
+}
+
+#center {
+    padding: 70px 0;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3 {
+    color: #1a237e;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+h4 {
+    font-size: 16px;
+    color: #1a237e;
+}
+
+h6 {
+    text-align: center;
+}
+
+p { font-size: 14px; }
+
+img {
+    display: inline;
+    width: 350px;
+    height: 400px;
+}
+
+.nav-icon-custom .ui-btn { padding-top: 20px; text-decoration: none; }
+.nav-icon-custom .ui-btn-after { 
+    width: 30px; 
+    height: 20px; 
+    margin-left: -15px; 
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    text-decoration: none;
+
+}
+
+#home1:after {
+    background: url("images/home1.png") 50% 50% no-repeat;
+    background-size: 20px 20px;
+}
+
+#feed1:after {
+    background: url("images/feed1.png") 50% 50% no-repeat;
+    background-size: 20px 20px;
+}
+
+#map1:after {
+    background: url("images/map1.png") 50% 50% no-repeat;
+    background-size: 20px 20px;
+}
+
+#settings1:after {
+    background: url("images/settings1.png") 50% 50% no-repeat;
+    background-size: 20px 20px;
+}
+
+#share1:after {
+    background: url("images/share1.png") 50% 50% no-repeat;
+    background-size: 20px 20px;
+}
+
+@media screen and (min-width: 320px) {
+    img {
+        width: 140px;
+        height: 190px; 
+    }
+}
